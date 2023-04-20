@@ -74,3 +74,13 @@ load.msg()         Generate prompts
 ```
 They are all standalone and should work without the rest of the system. NOTE: Upon exit, the function returns and ends the while loop. it does not call another function
 When home calls a function, it does not return until it exits.
+
+## Dockerfile
+
+The optional [dockerfile](https://github.com/voidarclabs/py.shadow/blob/main/dockerfile) will build a fully dockerised version of project shadow.
+you can build and run it using these commands:
+```
+docker build . -t shadow
+docker run -it --rm --name shadow shadow
+```
+The dockerfile will be available publicly as [voidarc/shadow](https://hub.docker.com/repository/docker/voidarc/shadow) on docker hub.
