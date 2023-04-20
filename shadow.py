@@ -5,7 +5,7 @@ import random
 
 
 def boot():
-    load.msg(3)
+    load.msg(random.randint(1, 5))
     app.bootscr()
     app.home()
     print("broken")
