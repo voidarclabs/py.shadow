@@ -1,0 +1,9 @@
+Welcome to Project Shadow!
+
+Commands:
+1         File explorer
+2         Google Search
+3         Terminal
+g         Help
+exit      Closes Shadow
+clear     Clears screen
