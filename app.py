@@ -3,6 +3,7 @@ import os
 import time
 import app
 import webbrowser
+from playsound import playsound as ps
 
 def bootscr():
     os.system("clear")
@@ -95,6 +96,9 @@ def files():
                 os.chdir("..")
                 prnt()
                 os.chdir("filesys")
+
+            elif file.split()[0] == 'play':
+                ps(file.split()[1])
 
             else:
                 print("# Not a recognised command")
