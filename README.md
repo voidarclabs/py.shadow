@@ -39,6 +39,7 @@ cd          change dir
 rm/remove   remove files or dirs
 add/touch   add a file
 mkdir       add a dir
+play        play an mp3 (untested)
 clear       clear screen
 exit        goes back to home
 ```
