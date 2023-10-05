@@ -1,0 +1,7 @@
+
+send
+sendmail  send an email
+read
+readmail  read emails
+help      open help menu
+exit      exit app

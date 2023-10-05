@@ -1,6 +1,4 @@
-Welcome to Project Shadow!
 
-Commands:
 1         File explorer
 2         Google Search
 3         Terminal

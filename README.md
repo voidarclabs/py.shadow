@@ -6,13 +6,20 @@ It also has it's own file system, in tne form of the `filesys` folder, that it c
 ## Usage
 
 To boot project shadow, you can use `./boot.sh` or on windows just open the file. You will need to have the latest version of [python](https://www.python.org/downloads/) installed,
-and for full functionality, have nano installed on your system. For windows, follow [this tutorial](https://anto.online/tips-and-tools/install-nano-text-editor-on-windows/), 
-and for linux, use `sudo apt install nano`. There are different prompts for each 'app'. They are as follows:
+and for full functionality, have nano installed on your system. 
+#
+> **Warning:** WINDOWS IS NOT SUPPORTED AS THIS PROGRAM REQUIRES TOUCH. PLEASE USE THE DOCKER VERSION! 
+
+For windows, follow [this tutorial](https://anto.online/tips-and-tools/install-nano-text-editor-on-windows/), 
+and for linux, use `sudo apt install nano`. 
+
+There are different prompts for each 'app'. They are as follows:
 ```
 /~#   home
 $~#   files
 ]~#   google
 @~#   terminal
+E~#   Email
 ```
 
 ### Home Page
@@ -22,6 +29,7 @@ The homepage commands are as follows:
 1         File explorer
 2         Google Search
 3         Terminal
+4         Email
 g         Help
 exit      Closes Shadow
 clear     Clears screen
@@ -50,12 +58,16 @@ This is normal. Make sure that you are in the root dir before exiting the file e
 
 When 2 is entered, it will come up with a different prompt from home. This function will only search for urls.
 When a url is entered, it will open your primary browser and redirect to that url. There are no special commands 
-or flags for this function
+or flags for this function. You do not need to input `https://`
 
 ### Terminal
 
 The terminal will work the same as a normal linux terminal, with limited functionality. The cd and sudo commands will not work, 
 and exit will go back to the homepage. Clear works in the same way, except for the top of the 'app'.
+
+### Email Client
+
+The email client is a simple email client using smtplib and some dubious code. To use, type `sendmail` or `send` into the terminal and follow the prompts.
 
 ### Misc
 
@@ -71,6 +83,7 @@ app.home()         Load the homepage
 app.files()        Load the file manager
 app.google()       Load the search engine
 app.terminal()     Load the terminal
+app.email()        Load the email client
 load.msg()         Generate prompts
 ```
 They are all standalone and should work without the rest of the system. NOTE: Upon exit, the function returns and ends the while loop. it does not call another function
