@@ -5,7 +5,7 @@ It also has it's own file system, in tne form of the `filesys` folder, that it c
 
 ## Usage
 
-To boot project shadow, you can use `./boot.sh` or on windows just open the file. You will need to have the latest version of [python](https://www.python.org/downloads/) installed,
+You will need to have the latest version of [python](https://www.python.org/downloads/) installed,
 and for full functionality, have nano installed on your system. 
 #
 > **Warning:** WINDOWS IS NOT SUPPORTED AS THIS PROGRAM REQUIRES TOUCH. PLEASE USE THE DOCKER VERSION! 
@@ -21,6 +21,11 @@ $~#   files
 @~#   terminal
 E~#   Email
 ```
+
+## Booting
+
+To boot, you can either `import app` in a python program or terminal, or use the click cli interface.
+For more information, use `python3 shadow.py --help` in the root directory.
 
 ### Home Page
 
@@ -68,6 +73,7 @@ and exit will go back to the homepage. Clear works in the same way, except for t
 ### Email Client
 
 The email client is a simple email client using smtplib and some dubious code. To use, type `sendmail` or `send` into the terminal and follow the prompts.
+> **Warning:**  The file attachment will grab files from the root directory as opposed to the filesystem.
 
 ### Misc
 
@@ -86,7 +92,8 @@ app.terminal()     Load the terminal
 app.email()        Load the email client
 load.msg()         Generate prompts
 ```
-They are all standalone and should work without the rest of the system. NOTE: Upon exit, the function returns and ends the while loop. it does not call another function
+They are all standalone and should work without the rest of the system. 
+These are also all accesible from the shadow.py file NOTE: Upon exit, the function returns and ends the while loop. it does not call another function
 When home calls a function, it does not return until it exits.
 
 ## Dockerfile

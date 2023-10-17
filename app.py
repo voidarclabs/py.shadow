@@ -184,7 +184,10 @@ def email():
 
     def login():
         global logincred
-        logincred = open('login.txt', 'r')
+        try:
+            logincred = open('login.txt', 'r')
+        except:
+            createlogin()
         logincred = logincred.read()
         logincred = logincred.splitlines()
         if logincred == []:
