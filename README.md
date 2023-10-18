@@ -3,10 +3,16 @@ Project shadow is a simple command line based system navigation tool.
 It has the ability to perform file explorer functions, google searches and has a terminal.
 It also has it's own file system, in tne form of the `filesys` folder, that it can navigate independantly.
 
+## Prerequisites:
+
+To install all dependancies, use the [requirements.txt](https://github.com/voidarclabs/py.shadow/blob/main/requirements.txt) 
+file to install the pip packages required.
+
 ## Usage
 
 You will need to have the latest version of [python](https://www.python.org/downloads/) installed,
 and for full functionality, have nano installed on your system. 
+
 #
 > **Warning:** WINDOWS IS NOT SUPPORTED AS THIS PROGRAM REQUIRES TOUCH. PLEASE USE THE DOCKER VERSION! 
 
@@ -26,6 +32,8 @@ E~#   Email
 
 To boot, you can either `import app` in a python program or terminal, or use the click cli interface.
 For more information, use `python3 shadow.py --help` in the root directory.
+
+## Apps
 
 ### Home Page
 
@@ -75,7 +83,7 @@ and exit will go back to the homepage. Clear works in the same way, except for t
 The email client is a simple email client using smtplib and some dubious code. To use, type `sendmail` or `send` into the terminal and follow the prompts.
 > **Warning:**  The file attachment will grab files from the root directory as opposed to the filesystem.
 
-### Misc
+## Misc
 
 The system will run regardless of permission and file placement. All of the files must remain in the same folder for the system to work.
 You can substitute the txt files for anything, as long as they are named the same. The load file and msg.txt come from [this repository](https://github.com/voidarclabs/py.loadscr),
